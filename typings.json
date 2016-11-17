@@ -1,0 +1,7 @@
+{
+  "name": "angular-quickstart",
+  "dependencies": {},
+  "globalDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160929162922"
+  }
+}

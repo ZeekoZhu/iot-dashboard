@@ -6,17 +6,14 @@
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a [routerLink]="['/dashboard']">首页</a>
-                </li>
-                <li>
-                    <a [routerLink]="['/alarm']">报警管理</a>
+                <li *ngFor="let tab of navTabs" [class.active]="tab === currentTab" (click)=onTabSelect(tab)>
+                    <a [routerLink]="[tab.path]">{{tab.title}}</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="content-wrapper">
+    <div #content class="content-wrapper">
         <router-outlet></router-outlet>
         <!-- /.content -->
     </div>
