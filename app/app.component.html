@@ -7,36 +7,14 @@
         <nav class="navbar navbar-static-top" role="navigation">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="javascript:void(0)">首页</a>
+                    <a [routerLink]="['/dashboard']">首页</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">报警管理</a>
+                    <a [routerLink]="['/alarm']">报警管理</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="main-sidebar">
-        <!-- Inner sidebar -->
-        <div class="sidebar">
-            <!-- Sidebar Menu -->
-            <ul class="sidebar-menu">
-                <!-- Optionally, you can add icons to the links -->
-                <li class="active">
-                    <a href="javascript:void(0)"><span>平日开店</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)"><span>假日开店</span></a>
-                </li>
-                <li class="treeview">
-                    <a href="javascript:void(0)"><span>闭店保安</span></a>
-                </li>
-            </ul>
-            <!-- /.sidebar-menu -->
-
-        </div>
-        <!-- /.sidebar -->
-    </div>
-    <!-- /.main-sidebar -->
 
     <div class="content-wrapper">
         <router-outlet></router-outlet>

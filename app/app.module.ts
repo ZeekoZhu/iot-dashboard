@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AlarmManagerComponent } from './alarm-manager/alarm-manager.component';
 import { AppRoutingModule } from './app.routing';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app.routing';
     ],
     declarations: [
         AppComponent,
-        DashboardComponent
+        DashboardComponent,
+        AlarmManagerComponent
     ],
     providers: [/* TODO: Providers go here */],
     bootstrap: [AppComponent],
