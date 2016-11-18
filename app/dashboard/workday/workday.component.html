@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 daily-chart-wrapper" style="display: block">
+            <div class="dailyChart">
+                <canvas width="100" height="100" baseChart 
+                    [data]="dailyScoreData" 
+                    [labels]="dailyScoreLabels" 
+                    [chartType]="dailyScoreType"
+                    [colors]="dailyScoreColors"
+                    [options]="dailyScoreOptions"></canvas>
+            </div>
+            <span class="daily-score">{{stabelCnt}}</span>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

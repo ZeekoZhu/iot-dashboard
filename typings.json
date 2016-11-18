@@ -2,6 +2,7 @@
   "name": "angular-quickstart",
   "dependencies": {},
   "globalDependencies": {
+    "chart.js": "registry:dt/chart.js#0.0.0+20161013133057",
     "jquery": "registry:dt/jquery#1.10.0+20160929162922"
   }
 }

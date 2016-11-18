@@ -6,7 +6,7 @@
             <ul class="sidebar-menu">
                 <!-- Optionally, you can add icons to the links -->
                 <li class="active">
-                    <a href="javascript:void(0)"><span>平日开店</span></a>
+                    <a [routerLink]="['workday']" href="javascript:void(0)"><span>平日开店</span></a>
                 </li>
                 <li>
                     <a href="javascript:void(0)"><span>假日开店</span></a>
@@ -21,4 +21,6 @@
         <!-- /.sidebar -->
     </div>
     <!-- /.main-sidebar -->
+
+    <router-outlet></router-outlet>
 </div>

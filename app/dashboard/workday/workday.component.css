@@ -1,0 +1,32 @@
+.container {
+    padding-top: 25px;
+}
+
+.dailyChart {
+    height: 100px;
+    width: 100px;
+}
+
+.daily-chart-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.daily-score {
+    display: inline;
+    font-size: 1.8em;
+    left: 40px;
+    position: absolute;
+    top: 32px;
+}
+
+.daily-score::after {
+    content: '分';
+    font: 0.5em;
+}

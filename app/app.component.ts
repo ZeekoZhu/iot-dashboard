@@ -2,7 +2,7 @@ import { Component, AfterViewInit, ViewChild, ElementRef, Renderer } from '@angu
 
 
 const tabs = [
-    { path: '/dashboard', title: '首页', full: false },
+    { path: '/dashboard/workday', title: '首页', full: false },
     { path: '/alarm', title: '报警管理', full: true }
 ];
 

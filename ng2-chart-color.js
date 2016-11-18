@@ -1,0 +1,1 @@
+//# sourceMappingURL=ng2-chart-color.js.map
