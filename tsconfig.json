@@ -8,9 +8,8 @@
         "experimentalDecorators": true,
         "removeComments": false,
         "noImplicitAny": false,
-        "lib": [
+        "lib":[
             "dom",
-            "es2015.promise",
             "es5"
         ]
     }

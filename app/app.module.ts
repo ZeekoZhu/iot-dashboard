@@ -13,6 +13,7 @@ import { AlarmManagerComponent } from './alarm-manager/alarm-manager.component';
 
 import { DashboardRoutingModule } from './dashboard/dashboard.routing';
 import { AppRoutingModule } from './app.routing';
+import { NumberService } from './services/daily-score.service';
 
 @NgModule({
     imports: [
@@ -29,7 +30,7 @@ import { AppRoutingModule } from './app.routing';
         AlarmManagerComponent,
         DailyScoreComponent
     ],
-    providers: [/* TODO: Providers go here */],
+    providers: [NumberService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }

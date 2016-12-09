@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
+import { NumberService } from '../../services/daily-score.service';
 
 @Component({
     moduleId: module.id,
     selector: 'daily-score',
     templateUrl: 'DailyScore.component.html',
-    styleUrls:['DailyScore.component.css']
+    styleUrls: ['DailyScore.component.css']
 })
 
 export class DailyScoreComponent implements OnInit {
+
+    constructor(private numService: NumberService) { }
 
     public stabelCnt: number = 0;
     public problemCnt: number = 0;
@@ -42,6 +45,9 @@ export class DailyScoreComponent implements OnInit {
 
 
     ngOnInit() {
+        for (let i = 0; i < 10; i++) {
+            this.numService.getNumber().then(r => console.log(r));
+        }
         this.problemCnt = 5;
         this.stabelCnt = 95;
         this.dailyScoreData = [this.stabelCnt, this.problemCnt];
